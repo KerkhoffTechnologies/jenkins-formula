@@ -18,6 +18,7 @@ jenkins_user:
     - name: {{ jenkins.user }}
     - groups:
       - {{ jenkins.group }}
+    - optional_groups: {{ jenkins.optional_groups }}
     - system: True
     - home: {{ jenkins.home }}
     - shell: /bin/bash

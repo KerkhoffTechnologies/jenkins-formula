@@ -5,6 +5,9 @@ jenkins:
     home: /var/lib/jenkins
     user: jenkins
     group: www-data
+    optional_groups:
+    - docker
+    - potato
     server_name: localhost
     master_url: http://localhost:8080
     plugins:
